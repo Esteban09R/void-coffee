@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# V0ID Coffee Roasters
 
-## Getting Started
+> **High-performance caffeine for the nocturnals.**
 
-First, run the development server:
+V0ID is a showcase project designed to demonstrate the level of customization and aesthetic polish achievable for the "cheapest tier" landing page that i can provide.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![V0ID Hero Section](/public/favicon.ico) _Note: Replace with actual screenshot later_
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌑 The Concept: "High-Performance Caffeine for Nocturnals"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+V0ID isn't your typical sunny-morning coffee shop. It's a brand built for those who thrive in the dark: programmers, night-shift creatives, and long-range debuggers.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🌟 Why this matters (The "Custom" Difference)
 
-## Learn More
+In the world of "cheap" landing pages, most developers resort to generic UI kits or templates. **V0ID** takes a different approach by weaving the brand's identity into every technical detail:
 
-To learn more about Next.js, take a look at the following resources:
+- **Bespoke Theme:** A deep `#0c0c10` background and neon accents (`#04ff00`) are hand-tuned to create a "terminal" atmosphere that resonates with developers.
+- **Glassmorphic UI:** Custom `backdrop-blur` and linear gradients provide depth and a premium feel without sacrificing performance.
+- **Grayscale Aesthetic:** All product images are processed with `grayscale` and `contrast` filters in real-time, ensuring a unified visual identity across the board.
+- **Code-Inspired Identity:** Every detail is themed for the dev community.
+  - _Origin:_ `Main`
+  - _Dark Level:_ `Darkula`
+  - _Grind Size:_ `250kb`
+  - _Brew Method:_ `compiled`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Built with cutting-edge tools for maximum efficiency and performance:
 
-## Deploy on Vercel
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) (Using modern @theme variables)
+- **Runtime:** [Bun](https://bun.sh/) (For ultra-fast development and builds)
+- **Typography:** Google Fonts (Bitcount Grid Double)
+- **Components:** Modular React server & client components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Key Dev Highlights
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js & Bun:** High-speed development and runtime.
+- **Tailwind CSS v4:** Using the latest alpha/beta features for modern styling.
+- **Fully Responsive:** Tested across various breakpoints to ensure the custom grid never breaks.
+- **Reusable Component Architecture:** Scalable and maintainable, despite being a single-day build.
+
+## 📦 Getting Started
+
+1.  **Install dependencies:**
+
+    ```bash
+    bun install
+    ```
+
+2.  **Run development server:**
+
+    ```bash
+    bun dev
+    ```
+
+3.  **Build for production:**
+    ```bash
+    bun run build
+    ```
+
+---
+
+## 📅 Roadmap / Future Improvements
+
+- [ ] **Color Refactor:** Uniformly transition all `text-secondary` tokens to `text-primary` for better contrast consistency.
+- [ ] **Backend Integration:** Configure Resend/React Email to handle contact form submissions.
+- [ ] **Inventory API:** Connect the product grid to a headless CMS or local JSON database.
+- [ ] **Interactive Terminal:** Add a CLI-style interaction for ordering.
+
+---
+
+_Created by Esteban Rolon_
