@@ -8,8 +8,8 @@ const courierPrime = Courier_Prime({
 });
 
 export const metadata: Metadata = {
-  title: "Void Coffee",
-  description: "The Coffee for the Night Owls",
+  title: "V0ID // Terminal Coffee",
+  description: "Coffee for Night Owls",
 };
 
 export default function RootLayout({

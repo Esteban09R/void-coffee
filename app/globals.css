@@ -4,8 +4,9 @@
   --background: #0c0c10;
   --text: #eaeaf0;
   --primary: #afb0c5;
-  --secondary: #04ff00;
-  --accent: #966d96;
+  --accent: #04ff00;
+
+  scroll-behavior: smooth;
 }
 
 html,
@@ -19,7 +20,6 @@ body {
   --color-background: var(--background);
   --color-text: var(--text);
   --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
   --color-accent: var(--accent);
 }
 
