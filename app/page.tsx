@@ -32,7 +32,7 @@ export default function Home() {
         width={1000}
         height={1000}
         priority
-        className="w-full h-full object-cover fixed top-0 left-0 z-[-100] opacity-50 mix-blend-multiply"
+        className="w-full h-full object-cover fixed top-0 left-0 z-[-100] mix-blend-multiply bg-fade-in"
       />
       {/**Hero section */}
       <section className="flex flex-col items-center justify-center gap-6 w-full min-h-screen max-w-2xl px-4 text-center">

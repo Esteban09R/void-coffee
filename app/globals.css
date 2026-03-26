@@ -21,8 +21,18 @@ body {
   --color-text: var(--text);
   --color-primary: var(--primary);
   --color-accent: var(--accent);
+
+  --animation-fade-in: fade-in 1.5s ease-out forwards;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 body {
   background: var(--background);
   color: var(--text);
@@ -31,4 +41,8 @@ body {
 .custom-gradient {
   background: radial-gradient(circle at 50% 50%, #ffffff20 0%, #0c0c10 80%);
   background-attachment: fixed;
+}
+
+.bg-fade-in {
+  animation: fade-in 1s ease-in forwards;
 }
