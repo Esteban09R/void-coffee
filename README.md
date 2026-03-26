@@ -4,7 +4,7 @@
 
 V0ID is a showcase project designed to demonstrate the level of customization and aesthetic polish achievable for the "cheapest tier" landing page that i can provide.
 
-![V0ID Hero Section](/public/favicon.ico) _Note: Replace with actual screenshot later_
+![V0ID](./public/screenshots/HeroSection.png)
 
 ## 🌑 The Concept: "High-Performance Caffeine for Nocturnals"
 
@@ -13,6 +13,8 @@ V0ID isn't your typical sunny-morning coffee shop. It's a brand built for those 
 ### 🌟 Why this matters (The "Custom" Difference)
 
 In the world of "cheap" landing pages, most developers resort to generic UI kits or templates. **V0ID** takes a different approach by weaving the brand's identity into every technical detail:
+
+![V0ID](./public/screenshots/Products.png)
 
 - **Bespoke Theme:** A deep `#0c0c10` background and neon accents (`#04ff00`) are hand-tuned to create a "terminal" atmosphere that resonates with developers.
 - **Glassmorphic UI:** Custom `backdrop-blur` and linear gradients provide depth and a premium feel without sacrificing performance.
@@ -39,6 +41,7 @@ Built with cutting-edge tools for maximum efficiency and performance:
 - **Tailwind CSS v4:** Using the latest alpha/beta features for modern styling.
 - **Fully Responsive:** Tested across various breakpoints to ensure the custom grid never breaks.
 - **Reusable Component Architecture:** Scalable and maintainable, despite being a single-day build.
+- **Custom Animations:** Custom animations for a unique and immersive user experience.
 
 ## 📦 Getting Started
 
@@ -64,10 +67,10 @@ Built with cutting-edge tools for maximum efficiency and performance:
 ## 📅 Roadmap / Future Improvements
 
 - [ ] **Color Refactor:** Uniformly transition all `text-secondary` tokens to `text-primary` for better contrast consistency.
-- [ ] **Backend Integration:** Configure Resend/React Email to handle contact form submissions.
+- [x] ~~**Backend Integration:** Configure Resend/React Email to handle contact form submissions.~~
 - [ ] **Inventory API:** Connect the product grid to a headless CMS or local JSON database.
 - [ ] **Interactive Terminal:** Add a CLI-style interaction for ordering.
 
 ---
 
-_Created by Esteban Rolon_
+_Created by Esteban Rolon & Reidan Team_
