@@ -29,24 +29,33 @@ function ContactUsForm() {
       className="flex flex-col gap-4 bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 w-full"
       onSubmit={handleSendEmail}
     >
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name" className="text-accent">
+        Name:
+      </label>
       <input
         type="text"
         id="name"
         name="name"
+        placeholder="$ >"
         className="bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 "
       />
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email" className="text-accent">
+        Email:
+      </label>
       <input
         type="email"
         id="email"
         name="email"
+        placeholder="$ >"
         className="bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 "
       />
-      <label htmlFor="message">Message</label>
+      <label htmlFor="message" className="text-accent">
+        Message:
+      </label>
       <textarea
         id="message"
         name="message"
+        placeholder="$ >"
         className="bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 "
       ></textarea>
       {!isSubmitted && (
