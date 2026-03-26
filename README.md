@@ -16,7 +16,7 @@ In the world of "cheap" landing pages, most developers resort to generic UI kits
 
 - **Bespoke Theme:** A deep `#0c0c10` background and neon accents (`#04ff00`) are hand-tuned to create a "terminal" atmosphere that resonates with developers.
 - **Glassmorphic UI:** Custom `backdrop-blur` and linear gradients provide depth and a premium feel without sacrificing performance.
-- **Grayscale Aesthetic:** All product images are processed with `grayscale` and `contrast` filters in real-time, ensuring a unified visual identity across the board.
+- **Grayscale Aesthetic (Optimized):** Images are pre-rendered in high-contrast grayscale and saved as efficient WebP files, reducing client-side GPU load and improving initial page load speeds.
 - **Code-Inspired Identity:** Every detail is themed for the dev community.
   - _Origin:_ `Main`
   - _Dark Level:_ `Darkula`

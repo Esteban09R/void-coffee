@@ -1,6 +1,34 @@
-export default function ContactUsForm() {
+"use client";
+import { sendEmail } from "@/lib/handleSendEmail";
+import { useState } from "react";
+
+function ContactUsForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+    try {
+      await sendEmail(formData);
+      setIsSubmitted(true);
+      setError(false);
+    } catch (error) {
+      console.error(error);
+      setError(true);
+      setIsSubmitted(false);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <form className="flex flex-col gap-4 bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 w-full">
+    <form
+      className="flex flex-col gap-4 bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 w-full"
+      onSubmit={handleSendEmail}
+    >
       <label htmlFor="name">Name</label>
       <input
         type="text"
@@ -21,9 +49,23 @@ export default function ContactUsForm() {
         name="message"
         className="bg-white/5 backdrop-blur-md border border-white/5 rounded-sm p-4 "
       ></textarea>
-      <button type="submit" className="text-accent">
-        [ Send ]
-      </button>
+      {!isSubmitted && (
+        <button type="submit" className="text-accent p-4 cursor-pointer">
+          {isSubmitting ? "[ Sending... ]" : "[ Send ]"}
+        </button>
+      )}
+      {isSubmitted && (
+        <p className="text-accent font-mono text-center">
+          {"> "} status: 200 OK. Message delivered.
+        </p>
+      )}
+      {error && (
+        <p className="text-red-500 font-mono text-center">
+          {"> "} status: 500 Internal Server Error. Message not delivered.
+        </p>
+      )}
     </form>
   );
 }
+
+export default ContactUsForm;
