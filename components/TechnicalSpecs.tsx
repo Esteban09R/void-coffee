@@ -16,7 +16,7 @@ export default function TechnicalSpecs() {
           <h5 className="text-accent">Origin:</h5>
           <p>Main</p>
           <h5 className="text-accent">Dark Level:</h5>
-          <p>Darkula</p>
+          <p>Dracula</p>
           <h5 className="text-accent">Grind Size:</h5>
           <p>250kb</p>
           <h5 className="text-accent">Brew Method:</h5>
